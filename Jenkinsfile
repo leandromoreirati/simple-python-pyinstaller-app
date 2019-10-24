@@ -7,6 +7,12 @@ pipeline {
             }
 
         }*/
+        stage ('ID do usuarui'){
+            steps {
+                sh 'id'
+            }
+
+        }
         stage ('Build') {
             agent {
                 docker {
